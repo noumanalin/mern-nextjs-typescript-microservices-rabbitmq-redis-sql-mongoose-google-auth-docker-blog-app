@@ -1,2 +1,12 @@
-# mern-nextjs-typescript-microservices-rabbitmq-redis-sql-mongoose-google-auth-docker-blog-app
-📝 A full-stack, production-grade Blogging Platform built with Microservices Architecture. Tech Stack: Next.js, Express.js, TypeScript, MongoDB, PostgreSQL, Mongoose, Redis, RabbitMQ, Google OAuth, Docker.
+# MERN Next.js TypeScript Microservices Blogging Application
+
+A highly scalable blogging platform built with:
+
+- MERN stack (MongoDB, Express.js, React/Next.js, Node.js)
+- TypeScript
+- Microservices Architecture
+- RabbitMQ for message queueing
+- Redis for caching
+- SQL + Mongoose (dual-database integration)
+- Google OAuth Authentication
+- Fully Dockerized for containerized deployment
