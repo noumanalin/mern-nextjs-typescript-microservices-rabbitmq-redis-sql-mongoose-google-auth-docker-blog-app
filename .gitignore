@@ -1,0 +1,60 @@
+# Node modules
+**/node_modules/
+**/.pnp
+.pnp.js
+
+# Logs
+**/logs
+**/*.log
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+
+# Runtime data
+**/pids
+**/*.pid
+**/*.seed
+**/*.pid.lock
+
+# dotenv environment variables
+**/.env
+**/.env.*.local
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+
+# TypeScript build output
+**/dist/
+**/build/
+**/out/
+
+# TS cache
+**/.tsbuildinfo
+
+# Next.js
+**/.next/
+**/.vercel/
+**/coverage/
+
+# Optional npm cache directory
+**/.npm
+
+# IDEs and Editors
+**/.vscode/
+**/.idea/
+**/.DS_Store
+**/Thumbs.db
+
+# Docker
+**/docker-compose.override.yml
+**/docker-compose.local.yml
+**/Dockerfile.*
+**/*.local.yml
+**/.docker/
+
+# Misc
+**/debug.log
+**/yarn.lock
+**/package-lock.json
