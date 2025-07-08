@@ -1,0 +1,33 @@
+{
+  "name": "user_microservices",
+  "version": "1.0.0",
+  "description": "user microservices",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "concurrently \"tsc -w\" \"nodemon dist/server.js\""
+  },
+  "author": "Nouman Ali",
+  "license": "MIT",
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.1",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.0.0",
+    "cloudinary": "^2.7.0",
+    "concurrently": "^9.2.0",
+    "datauri": "^4.1.0",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.1",
+    "multer": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.3",
+    "@types/mongoose": "^5.11.96",
+    "typescript": "^5.8.3"
+  }
+}
