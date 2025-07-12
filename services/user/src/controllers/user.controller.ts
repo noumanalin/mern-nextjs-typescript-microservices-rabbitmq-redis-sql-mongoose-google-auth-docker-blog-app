@@ -35,7 +35,7 @@ export const myProfile = TryCatch( async(req:AuthenticationReq, res)=>{
 
 // * Get User Profile -------------------------------------------------------------------------------------------------------------------------------
 export const getUserProfile = TryCatch( async(req, res)=>{
-    const user = await User.findById(req.params.id);
+    const user = await User.findById(req.params.id).select("- password");
 
     if(!user){
         res.status(404).json({success:false, message:"user not found"})

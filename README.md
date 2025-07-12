@@ -10,3 +10,19 @@ A highly scalable blogging platform built with:
 - SQL + Mongoose (dual-database integration)
 - Google OAuth Authentication
 - Fully Dockerized for containerized deployment
+
+
+
+
+
+main/
+├── docker-compose.yml  ✅
+├── client/             🖥️ Next.js app
+│   └── Dockerfile
+└── services/
+    ├── user/           🧑 Node.js + MongoDB
+    │   └── Dockerfile
+    ├── author/         ✍️ Node.js + PostgreSQL + RabbitMQ
+    │   └── Dockerfile
+    └── blog/           📝 Node.js + PostgreSQL + RabbitMQ
+        └── Dockerfile

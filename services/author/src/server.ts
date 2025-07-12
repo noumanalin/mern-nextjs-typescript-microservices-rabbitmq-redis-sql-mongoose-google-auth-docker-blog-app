@@ -1,7 +1,8 @@
 import express , { Application, Response, Request } from "express";
 import "dotenv/config"; 
 import { initDB } from "./model/init_models_db.js";
-import blogRoutes from './routes/blog.routes.js'
+import blogRoutes from './routes/blog.routes.js';
+import { connectRabbitMQ } from "./utils/rabbitmq.js";
 
 
 
@@ -19,6 +20,7 @@ app.get("/", (req, res) => {
 
 app.use('/api', blogRoutes);
 
+connectRabbitMQ();
 initDB().then(()=>{
   app.listen(PORT, ()=>{console.log(`🚀 Server is running on http://localhost:${PORT} with ${process.pid}`)})
 });

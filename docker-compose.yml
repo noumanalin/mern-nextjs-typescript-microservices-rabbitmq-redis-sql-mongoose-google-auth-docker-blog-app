@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+
+# docker-compose up -d
+
+# define all  services in one docker-compose.yml file
+
+# It helps to
+
+# Start all services with one command: docker-compose up -d
+
+# Keep ports, configs, and networks consistent
+
+# Avoid manual CLI commands every time
+
+# Easy for team members to replicate your setup
